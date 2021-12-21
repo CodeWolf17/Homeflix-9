@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<title>Feeling Bored Alittle?!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="stay4.gif" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+.mySlides {display: none;}
+</style>
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+</style>
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+.mySlides {display: none;}
+</style>
+
+<!comment style>
+
+}
+<style>
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  background-image: url('star.gif');
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 1px;
+  right: 1px;
+  width: 280px;
+
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: grey;
+  border-radius: 10px;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+<!comment  style over!>
+<style>
+#myBtn {
+  background-color:orange;
+  background-image: url('confy.gif');
+  border-color:orange;
+  border-radius: 10px;
+  color:black;
+}
+.myBtn {
+
+
+  border-radius: 3px;
+
+}
+</style>
+
+<!dropdown>
+<style>
+body {margin:0;font-family:Arial}
+
+.topnavy {
+  position: fixed;
+ top: 0;
+ width: 100%;
+
+}
+</style>
+<style>
+.topnavyy {
+  position: fixed;
+ top: 0;
+ width: 100%;
+ left: 20%;
+</style>
+<!dropdown>
+
+<!dropdown>
+<style>
+body {margin:0;font-family:Arial}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: yellow;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    border-radius: 3px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+<!dropdown>
+
+</head>
+</body>
+<body background="bigbg3.jpg">
+
+
+  <! Linking To Best Sites >
+
+   <div class="w3-container w3-padding-32 w3w3-hover-orange" id="projects">
+     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3w3-hover-orange">
+<div align=center>
+         <div class="w3-display-topcenter w3-container w3-amber w3-hover-orange w3-hide-small topnavyy"
+          style="top:4%;opacity:0.7;width:70%">
+         <h2><b>Get Linked To Different Sites And<br>Get Exposed To Many Opportunities<br></b></h2>
+       </div>
+
+     </h3>
+   </div>
+
+
+
+<?php
+	if(isset($_POST['submit'])){
+		$name=$_POST['name'];
+		$msg=$_POST['msg'];
+
+		$to='hottouchez@gmail.com'; // Receiver Email ID, Replace with your email ID
+		$subject='Comment!';
+		$message="Name :".$name."\n"."Wrote the following :"."\n\n".$msg;
+		$headers="From: ".$name;
+
+		if(mail($to, $subject, $message, $headers)){
+			echo "<h1>Sent Successfully! Thank you"." ".$name.", We Admire you!</h1>";
+		}
+		else{
+			echo "Something Went Wrong,Please"." ".$name.", Refresh Then Comment Again!";
+		}
+	}
+?>
+
+
+
+
+
+
+
+
+
+
+<font face="comic sans" color="Black" size="5" spacing="5" autofocus>
+ <p><b>You will be directed to the homepage in 3 seconds</b></p>
+    <script>
+        var timer = setTimeout(function() {
+            window.location='https://homeflix9.com/about.html'
+        }, 9000);
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!Navbar >
+<div class="topnavy">
+   <div class="topnav" id="myTopnav">
+   <a href="About.html" class="active">Comment</a>
+   <div class="dropdown">
+      <button class="dropbtn">Categories
+       <i class="fa fa-caret-down"></i>
+     </button>
+     <div class="dropdown-content">
+       <a href="iindex.html">Home</a>
+      <a href="cashtemple.html">Money Temple</a>
+       <a href="cooking.html">Cooking</a>
+       <a href="bored.html">Passion</a>
+ 	  <a href="school.html">Scholarships</a>
+       <a href="movies.html">Movies</a>
+       <a href="hacker.html">Hacking</a>
+ 	  <a href="news.html">News</a>
+       <a href="corona.html">Corona</a>
+       <a href="redemption.html">Redemption</a>
+     </div>
+   </div>
+   <a href="whatsapp://send?text=https://homeflix9.com" data-action="share/whatsapp/share" class="w3-bar-item w3-black w3-button w3-padding-20 myBtn " >Share via Whatsapp</a>
+
+
+   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+ </div>
+</div>
+
+ <script>
+ function myFunction() {
+   var x = document.getElementById("myTopnav");
+   if (x.className === "topnav") {
+     x.className += " responsive";
+   } else {
+     x.className = "topnav";
+   }
+ }
+ </script>
+
+
+   </div>
+   </div>
+
+
+
+<div class="w3-bar w3-coral w3-border w3-hover-light-pink">
+  <a href="iindex.html" class="w3-bar-item w3-button w3-blue"><i class="fa fa-home"></i></a>
+  <a href="https://accounts.google.com/ServiceLogin/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&flowName=GlifWebSignIn&flowEntry=AddSession" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+  <a href="https://www.google.com/" class="w3-bar-item w3-button"><i class="fa fa-globe"></i></a>
+</div>
+
+</div>
+
+
+
+
+
+<div class="w3-bar w3-tiny w3-black">
+
+    <div class="w3-bar-item">
+        </div><div align="center">
+        <p id="demo"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+</div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

